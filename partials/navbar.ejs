@@ -1,0 +1,39 @@
+<div class="main-navbar">
+  <div class="navbar-layer-1 nav-constrained">
+
+    <img onclick="location.href='/'" class="robotics-logo" src="<%= navLang.imgRoboticsLogo%>" alt="LCC Robotics">
+    <p class="text-right-nav"><%= navLang.fakeAddRight %></p>
+
+  </div>
+  <div class="navbar-layer-2 nav-constrained">
+    <div class="options-left">
+      <div onclick="location.href='/job/all'" class="shop-dropdown">
+        <img class="icon" src="../images/icons/boxIcon.png" alt="">
+        <p> <%= navLang.sortBy %> <br> <%= navLang.department %></p>
+      </div>
+      <div class="quick-links">
+        <span class="links">
+          <a href="/school"><%= navLang.schoolDescription %></a>
+          <a href="/gamedescription"><%= navLang.gameDescription %></a>
+          <a href="/gallery"><%= navLang.gallery %></a>
+          <a href="/documents/design"><%= navLang.robotDesign %></a>
+          <a href="/documents/experience"><%= navLang.studentExperience %></a>
+        </span>
+      </div>
+    </div>
+    <div class="options-right">
+      <table>
+        <tr>
+          <td onclick="setLocale('en')">
+            <p>English</p>
+            <img class="flag-icon" src="../images/icons/unionFlag.png" alt="">
+          </td>
+          <td onclick="setLocale('fr')">
+            <p>Français</p>
+            <img class="flag-icon" src="../images/icons/frenchFlag.png" alt="">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

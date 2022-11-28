@@ -1,0 +1,11 @@
+{
+  "galleryHome": "Images",
+  "welcomeMessage": "Bienvenue à la galerie d'images",
+  "welcomeSubtitle": "La galerie d'images est remplie de photos prises par presque tous les mebres du clube de robotique",
+  "selectSubteam": "Choisissez une souséquipe grâce au menu de navigation ci-dessus",
+  "selectSubtitle": "Vous pouvez également utiliser le menu ci-dessous",
+  "sorter": "Trieur",
+  "robot": "Robot",
+  "driveSystem": "Système de Locomotion",
+  "thrower": "Lanceur"
+}

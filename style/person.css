@@ -1,0 +1,234 @@
+body {
+
+  min-width: 737px;
+
+}
+
+.img-buttons {
+
+  float: left;
+  margin-left: 20px;
+
+}
+
+.img-buttons ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.img-buttons img {
+
+  width: 40px;
+  border: 1px solid #a2a6ac;
+  border-radius: 2px;
+
+}
+
+.img-buttons img:hover, #default-selected {
+
+  box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+  border: 1px solid #e77600;
+  cursor: pointer;
+
+}
+
+.img-buttons li {
+
+  margin: 20px 0;
+
+}
+
+.main-img {
+
+  /* display: inline-block;
+  margin: 30px;
+  margin-left: 60px; */
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+
+
+}
+
+.main-img img {
+
+  height: 300px;
+  width: 300px;
+
+}
+
+.img-left {
+
+  width: 400px;
+  display: inline-block;
+  float: left;
+
+}
+
+.text-right {
+
+  float: left;
+  margin: 30px;
+  max-width: 290px;
+
+}
+
+.text-right h2 {
+
+  margin: 0;
+  font-size: 19px;
+  font-weight: 400;
+
+}
+
+.link-contribution {
+
+  font-size: 14px;
+  color: #247bbd;
+  cursor: default;
+
+}
+
+.link-contribution:hover {
+
+  cursor: pointer;
+  color: #c45500;
+  text-decoration: underline;
+
+}
+
+.text-right .contributions {
+
+  margin: 0;
+  color: #0066c0;
+  font-size: 13px;
+
+}
+
+.text-right p {
+
+  margin: 0;
+
+}
+
+.people-container table {
+
+  border-spacing: 70px 0;
+
+}
+
+.table-container {
+
+  width: 197px;
+  overflow: visible;
+
+}
+
+.people-container td {
+
+}
+
+.people-container td:hover {
+
+  cursor: pointer;
+
+}
+
+.people-container img {
+
+  height: 200px;
+
+}
+
+.people-container h2 {
+
+  margin: 0;
+  padding: 0;
+  height: 38;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+th, td {
+  padding: 0;
+}
+
+.people-container{
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  margin: 0;
+  margin-left: 40px;
+  float: left;
+}
+
+.related-people-container {
+
+
+  height: 100%;
+  width: auto;
+
+}
+
+.people-container p {
+
+  font-size: 13px;
+  color: #767676;
+
+}
+
+.related-people {
+
+  padding: 0;
+  display: inline-block;
+  width: 95%;
+  height: 270px;
+  float: left;
+  margin: 0;
+  margin-bottom: 40px;
+
+}
+
+.blank-space {
+
+  width: 2.5%;
+  margin: 0;
+  height: 20px;
+  float: left;
+
+}
+
+.choices-container {
+
+  width: 100%;
+
+}
+
+.people-title-text {
+
+  margin-left: 40px;
+  color: #C60;
+  font-size: 21px;
+  font-weight: bold;
+
+}
+
+.table-blank-space {
+
+  width: 100px;
+
+}
+
+.content-stretch {
+
+  width: 80px;
+
+}

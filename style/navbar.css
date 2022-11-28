@@ -1,0 +1,171 @@
+.main-navbar {
+
+  min-width: 1119px;
+  background-color: #232f3e;
+
+}
+
+.navbar-layer-1 {
+
+  width: 100%;
+  height: 50px;
+  background-color: #232f3e;
+
+}
+
+.robotics-logo {
+
+  float: left;
+  height: 50px;
+  margin: 0;
+  margin-left: 20px;
+
+}
+
+.robotics-logo:hover {
+
+  cursor: pointer;
+
+}
+
+.text-right-nav {
+
+  float: right;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  margin-right: 20px;
+
+}
+
+.navbar-layer-2 {
+
+  width: 100%;
+  height: 57px;
+  background-color: #232f3e;
+
+}
+
+.options-left {
+
+  float: left;
+  height: 100%;
+  vertical-align: center
+
+}
+
+.shop-dropdown {
+
+  margin: 0;
+  margin-left: 20px;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 3px;
+  float: left;
+
+}
+
+.shop-dropdown:hover {
+
+  border: 2px solid #4f5965;
+  cursor: pointer;
+
+}
+
+.shop-dropdown p {
+
+  margin: 0;
+  font-size: 15px;
+  margin-left: 5px;
+  display: inline;
+  float: left;
+
+}
+
+.shop-dropdown .icon {
+
+  height: 30px;
+  margin: 5px 0;
+  float: left;
+  display: inline-block;
+
+}
+
+.options-left .quick-links {
+
+  float: left;
+  vertical-align: baseline;
+
+}
+
+.options-left .quick-links .links {
+
+  margin-top: 22px;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.options-left .quick-links a {
+
+  color: #ccc;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 5px;
+
+}
+
+.options-left .quick-links a:hover {
+
+  text-decoration: underline;
+
+}
+
+.options-right {
+
+  float: right;
+  margin-right: 20px;
+
+}
+
+.options-right table {
+
+  color: #FFFFFF;
+
+}
+
+.options-right td {
+
+  margin-left: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 2px;
+  border-radius: 3px;
+
+}
+
+.options-right td p {
+
+  display: block;
+  margin: 0;
+
+}
+
+.options-right td:hover {
+
+  border: 2px solid #4f5965;
+  cursor: pointer;
+
+}
+
+.flag-icon {
+
+  width: 15px;
+  margin: 3px;
+  display: inline-block;
+
+}

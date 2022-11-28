@@ -1,0 +1,228 @@
+.container table {
+
+  border-spacing: 15px 0;
+
+}
+
+.container td:hover {
+
+  cursor: pointer;
+
+}
+
+.container img {
+
+  height: 200px;
+
+}
+
+.container h2 {
+
+  margin: 0;
+  padding: 0;
+  height: 38;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+th, td {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-width: 500px;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  margin: 0;
+  float: left;
+}
+
+.content-container {
+
+
+  height: 260px;
+
+}
+
+.choice-container {
+
+  height: 260px;
+
+}
+
+.choice-container table {
+
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+
+}
+
+.choice-container td {
+
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+
+}
+
+td#second {
+
+  border-left: 2px solid rgba(0,0,0,0.15);
+  border-radius: 16px;
+
+}
+
+.choice-container img {
+
+  height: 250px;
+
+}
+
+.choice-container img:hover {
+
+  cursor: pointer;
+
+}
+
+#coordinators {
+
+  margin: 0;
+
+}
+
+.container p {
+
+  font-size: 13px;
+  margin: 0;
+  color: #767676;
+
+}
+
+.add-container {
+
+  width: 20%;
+  height: 936px;
+  background-color: rgba(0, 0, 0, 0.024);
+  float: left;
+
+}
+
+.main-data-text {
+
+  float: left;
+  width: 76%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+}
+
+.margin-left {
+
+  float: left;
+  width: 2%;
+  height: 10px;
+  background-color: transparent;
+
+}
+
+.margin-right {
+
+  float: left;
+  width: 2%;
+  height: 10px;
+  background-color: transparent;
+
+}
+
+.add {
+
+  border: 3px solid black;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 10px;
+
+}
+
+.add:hover {
+
+  cursor: pointer;
+
+}
+
+#add-1 {
+
+  height: 250px;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+
+#add-2 {
+
+  height: 250px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+
+}
+
+#add-3 {
+
+  height: 400px;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+
+}
+
+.title-text {
+
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+
+
+}
+
+span.show-link {
+
+  font-size: 14px;
+  margin-left: 15px;
+  color: #247bbd;
+  cursor: default;
+
+}
+
+span.show-link:hover {
+
+  cursor: pointer;
+  color: #c45500;
+  text-decoration: underline;
+
+}
+
+.content {
+
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  display: inline-block;
+
+}
+
+#final-hr {
+
+  margin-bottom: 5px;
+
+}

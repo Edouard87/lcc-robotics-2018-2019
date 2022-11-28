@@ -1,0 +1,5 @@
+{"title": "Robot", "images" :
+  [{"name": "Une simulation en 3D de ce que notre robot.", "image": "../images/gallery/robot/concept-1.png"},
+    {"name": "Le dessous de notre robot.", "image":"../images/gallery/robot/underside.jpg"},
+    {"name": "Notre robot après avoir installé le système de locomotion.", "image":"../images/gallery/robot/robot-1.jpg"},
+    {"name": "Une autre image de notre robot après avoir installé le système de locomotion.", "image":"../images/gallery/robot/robot-2.jpg"}]}

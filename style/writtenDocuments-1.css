@@ -1,0 +1,178 @@
+.left-console h2 {
+
+  color: #767676;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+}
+
+.written-documents {
+
+  min-width: 1119px;
+
+}
+
+.left-console ul {
+
+  list-style-type: none;
+  margin: 3px;
+  padding: 0;
+  margin-left: 25px;
+
+}
+
+.left-console li {
+
+  font-size: 12px;
+  margin: 4px;
+
+}
+
+.left-console h3 {
+
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 10px;
+
+}
+
+.left-console h3:hover, .left-console li:hover, .product-main h2:hover {
+
+  color: #c45500;
+  cursor: pointer;
+
+}
+
+.left-console {
+
+  float: left;
+  display: inline;
+  width: 200px;
+  height: auto;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  margin-top: 10px;
+
+}
+
+.vertical-line {
+
+  float: left;
+  width: 2px;
+  height: 300px;
+  background-color: rgba(0,0,0,0.15);
+  margin-top: 10px;
+  border-radius: 16px;
+  direction: ltr;
+
+}
+
+.main-console {
+
+  float: left;
+  display: inline;
+  position: absolute;
+  width: 75%;
+  min-width: 661px;
+  height: 100%;
+  margin: 0;
+  margin-top: 10px;
+
+}
+
+.main-console h2 {
+
+  font-weight: 400;
+  font-size: 28px;
+
+}
+
+#written-documents {
+
+  margin-top: 8px;
+  margin-left: 10px;
+
+}
+
+#robot-design {
+
+  margin-top: 0;
+  margin-left: 10px;
+
+}
+
+.product-main {
+
+  width: 100%;
+  height: 218px;
+  padding-bottom: 250px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin-left: 20px;
+
+}
+
+.product-main img {
+
+  width: 218px;
+  height: 218px;
+  float: left;
+  margin-top: 15px;
+
+}
+
+.product-main h2 {
+
+  display: inline;
+  float: left;
+  margin: 0;
+  margin-top: 14px;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #0066c0;
+
+}
+
+.product-main-description {
+
+  float: left;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.product-main h3 {
+
+  float: left;
+  display: block;
+
+}
+
+.word-count {
+
+  display: block;
+  color: #B12704;
+  font-size: 14px;
+  margin-top: 6px;
+
+}
+
+.attribution {
+
+  display: block;
+  color: #949494;
+  font-size: 13px;
+
+}
+
+.blank-space-extension {
+
+  width: 100%;
+  height: 40px;
+
+}

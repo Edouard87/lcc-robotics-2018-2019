@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.allJobs %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/index_responsive.css">
+    <link rel="stylesheet" href="../style/seeOne.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="jumbotron"></div>
+      <div class="information">
+        <div class="main-header">
+          <h2 class="main-title"><%= language.title %></h2>
+          <p class="subtitle"><%= language.subtitle %></p>
+        </div>
+      </div>
+        <div class="people-grid">
+            <div class="card-item">
+              <img src="../images/quicklinks/school.png" alt="<%= language.schoolDescription %>">
+              <p><%= language.schoolDescription %></p>
+              <a class="link-button" href="/school"><%= language.buttonText %></a>
+            </div>
+            <div class="card-item">
+              <img src="../images/quicklinks/game.png" alt="%= language.gameDescription %>">
+              <p><%= language.gameDescription %></p>
+              <a class="link-button" href="/gamedescription"><%= language.buttonText %></a>
+            </div>
+            <div class="card-item">
+              <img src="../images/quicklinks/photosRobot.png" alt="<%= language.gallery %>">
+              <p><%= language.gallery %></p>
+              <a class="link-button" href="/gallery"><%= language.buttonText %></a>
+            </div>
+            <div class="card-item">
+              <img src="../images/quicklinks/prototype.png" alt="<%= language.robotDesign %>">
+              <p><%= language.robotDesign %></p>
+              <a class="link-button" href="/documents/design"><%= language.buttonText %></a>
+            </div>
+            <div class="card-item">
+              <img src="../images/quicklinks/groupIcon.png" alt="<%= language.studentExperience %>">
+              <p><%= language.studentExperience %></p>
+              <a class="link-button" href="/documents/experience"><%= language.buttonText %></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/pageManager.js"></script>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

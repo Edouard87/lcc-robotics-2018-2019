@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/writtenDocuments-1.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title><%= errorLanguage.noEntryFound %></title>
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="left-console">
+        <h2><%= errorLanguage.searchDocuments %></h2>
+        <h3 onclick="location.href='/documents/design';"><%= errorLanguage.robotDesign %></h3>
+        <ul>
+
+          <% for (var i = 0; i < design.length; i++) {%>
+            <li onclick="location.href='/document/<%= design[i].name %>';"><%= design[i].title %></li>
+          <%}%>
+
+        </ul>
+        <h3 onclick="location.href='/documents/experience';"><%= errorLanguage.studentExperience %></h3>
+        <ul>
+
+          <% for (var i = 0; i < experience.length; i++) {%>
+            <li onclick="location.href='/document/<%= experience[i].name %>';"><%= experience[i].title %></li>
+          <%}%>
+
+        </ul>
+        <div class="blank-space-extension"></div>
+
+      </div>
+      <div class="main-console">
+        <h2 id="written-documents"><%= errorLanguage.errorMessage %></h2>
+
+      </div>
+    </div>
+
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

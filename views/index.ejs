@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.homePage %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/index_responsive.css">
+    <link rel="stylesheet" href="../ScrollbarPlugin/jquery.mCustomScrollbar.css">
+    <script src="../jQuery/jquerySource.js"></script>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img alt="<%= language.slideshowImageCoding %>" src="../images/carousel/coding.jpg" class="slideshow-card">
+        </div>
+
+        <div class="mySlides fade">
+          <img alt="<%= language.slideshowImagePerspective %>" src="../images/carousel/perspective.jpg" class="slideshow-card">
+        </div>
+
+        <div class="mySlides fade">
+          <img alt="<%= language.slideshowImageGroup %>" src="../images/carousel/group.jpg" class="slideshow-card">
+        </div>
+
+        <div class="mySlides fade">
+          <img alt="<%= language.slideshowImageWorking %>" src="../images/carousel/working.jpg" class="slideshow-card">
+        </div>
+
+        <div class="prev-wrapper" onclick="plusSlides(-1)">
+          <a class="prev" >&#10094;</a>
+        </div>
+        <div class="next-wrapper" onclick="plusSlides(1)">
+          <a class="next" >&#10095;</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="margin-left"></div>
+        <div class="main-data-text">
+          <div class="content-container">
+            <h2 class="title-text"><%= language.team %><span class="show-link" onclick="location.href='/job/all'"><%= language.seeAll %></span></h2>
+            <div class="container">
+              <table>
+                <tbody>
+                  <tr>
+                    <td onclick="location.href='/job/sorter'"><img src="../images/jobs/sorter.png" alt="<%= language.sorter %>"><h2><%= language.sorter %></h2><p><%= people.sorter %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/electrical'"><img src="../images/jobs/electrical.png" alt="<%= language.electricalSetup %>"><h2><%= language.electricalSetup %></h2><p><%= people.electrical %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/program'"><img src="../images/jobs/programming.png" alt="<%= language.program %>"><h2><%= language.program %></h2><p><%= people.program %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/drive'"><img src="../images/jobs/drive.png" alt="<%= language.driveSystem %>"><h2><%= language.driveSystem %></h2><p><%= people.drive %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/pickup'"><img src="../images/jobs/pickup.png" alt="<%= language.pickupOfBalls %>"><h2><%= language.pickupOfBalls %></h2><p><%= people.pickup %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/thrower'"><img src="../images/jobs/thrower.png" alt="%= language.thrower %>"><h2><%= language.thrower %></h2><p><%= people.thrower %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/movie'"><img src="../images/jobs/movie.png" alt="<%= language.movie %>"><h2><%= language.movie %></h2><p><%= people.movie %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/website'"><img src="../images/jobs/website.png" alt="<%= language.website %>"><h2><%= language.website %></h2><p><%= people.website %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/game'"><img src="../images/jobs/simulation.png" alt="<%= language.gameTerrainSimulation %>"><h2><%= language.gameTerrainSimulation %></h2><p><%= people.game %> <%= language.people %></p></td>
+                    <td onclick="location.href='/job/supervisors'"><img src="../images/noImage.jpg" alt="<%= language.supervisors %>"><h2><%= language.supervisors %></h2><p><%= people.supervisors %> <%= language.people %></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="styled-hr" id="first-hr" style="visibility: hidden"></div>
+          <div class="content-container">
+            <h2 class="title-text"><%= language.quickLinks %><span class="show-link" onclick="location.href = '/quicklinks'"><%= language.seeAll %></span></h2>
+            <div class="container">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img onclick="location.href='/school'" src="../images/quickLinks/school.png" alt="<%= language.schoolDescription %>"><h2><%= language.schoolDescription %></h2><p><%= language.whoAreWe %></p></td>
+                    <td><img onclick="location.href='/gamedescription'" src="../images/quickLinks/game.png" alt="<%= language.gameDescription %>"><h2><%= language.gameDescription %></h2><p><%= language.whatAreWeDoing %></p></td>
+                    <td><img onclick="location.href='/gallery'" src="../images/quickLinks/photosRobot.png" alt="<%= language.gallery %>"><h2><%= language.gallery %></h2><p><%= language.seeEverything %></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="styled-hr"></div>
+          <div class="choice-container">
+            <table>
+              <tbody>
+                <tr>
+                  <td onclick="location.href='/documents/design'"><img src="<%= language.imgRobotDesign %>" alt="<%= language.designText %>"></td>
+                  <td onclick="location.href='/documents/experience'" id="second"><img src="<%= language.imgStudentExperience %>" alt="<%= language.experienceText %>"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="styled-hr" id="final-hr"></div>
+        </div>
+        <div class="margin-right"></div>
+        <div class="add-container">
+          <div style="background-image: url('<%= language.imgAmazonTheme %>');" onclick="location.href='https://www.amazon.ca'" class="add" id="add-1"></div>
+          <div style="background-image: url('<%= language.imgVertigoalDescription %>');" onclick="location.href='/gamedescription'" class="add" id="add-2"></div>
+          <div style="background-image: url('<%= language.imgPracticePerfect %>');" onclick="location.href='/documents/experience'" class="add" id="add-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/carousel.js"></script>
+    <script src="../ScrollbarPlugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../scripts/scrollbarSetup.js"></script>
+    <script src="../scripts/locale.js"></script>
+
+    </script>
+
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.title %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/school.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="school-jumbotron"></div>
+      <div class="content">
+        <div class="main-data-text">
+          <div class="content-container">
+            <h2 class="title-text"><%= language.title %></h2>
+            <div class="container">
+              <p><%= language.aboutTheSchool %></p>
+            </div>
+            <h2 class="title-text"><%= language.typeAndLocation %></h2>
+            <div class="container">
+                <p><%= language.coordinates %></p>
+            </div>
+          </div>
+          </div>
+          <div class="sidebar-images">
+            <div class="add" id="add-1"></div>
+            <div class="add" id="add-2"></div>
+          </div>
+        </div>
+      </div>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= file.title %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav-gallery.ejs %>
+    <div class="all-data constrained">
+      <div class="main-header">
+        <h2 class="main-title"><%= file.title %></h2>
+        <p class="subtitle"> <%= language.subtitle %></p>
+      </div>
+      <div class="styled-hr"></div>
+      <div class="images-close-up">
+        <img id="magnify" src="../images/icons/cursor.png" alt="<%= language.magnify %>">
+        <h2 id="subtitle"><%= language.clickOnImage %></h2>
+      </div>
+      <div class="styled-hr"></div>
+      <div class="images-gallery">
+        <% for (var i = 0; i < file.images.length; i++) {%>
+
+          <div class="image-grid-img">
+            <img onclick="changeImage('<%= file.images[i].image %>', '<%= file.images[i].name %>')" src="<%= file.images[i].image %>" alt="<%= file.images[i].name %>">
+          </div>
+
+        <% } %>
+      </div>
+    </div>
+
+    <script src="../scripts/gallery.js"></script>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

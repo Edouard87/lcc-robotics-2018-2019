@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= errorLanguage.errorMessage %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/index_responsive.css">
+    <link rel="stylesheet" href="../style/seeOne.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav.ejs %>
+    <div class="information">
+      <div class="main-header">
+        <h2 class="main-title"><%= errorLanguage.errorMessage %></h2>
+        <p class="subtitle"><%= errorLanguage.errorDescription %> <%= job %>.</p>
+      </div>
+      <div class="people-grid">
+    </div>
+
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

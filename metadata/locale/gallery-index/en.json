@@ -1,0 +1,11 @@
+{
+  "galleryHome": "Gallery Home",
+  "welcomeMessage": "Welcome to the Gallery",
+  "welcomeSubtitle": "The gallery is a compliation of photos taken by most of the students involved in robotics.",
+  "selectSubteam": "Please select a subteam using the navigation menu above",
+  "selectSubtitle": "Alternatively, use the menu below.",
+  "sorter": "Sorter",
+  "robot": "Robot",
+  "driveSystem": "Drive System",
+  "thrower": "Thrower"
+}

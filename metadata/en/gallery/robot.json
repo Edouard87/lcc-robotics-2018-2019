@@ -1,0 +1,5 @@
+{"title": "Robot", "images" :
+  [{"name": "A 3D rendering of what our robot should look like in the end", "image": "../images/gallery/robot/concept-1.png"},
+    {"name": "The underside of our robot.", "image":"../images/gallery/robot/underside.jpg"},
+    {"name": "An image of our robot with the drive system installed...", "image":"../images/gallery/robot/robot-1.jpg"},
+    {"name": "A different image of our robot with the drive system installed...", "image":"../images/gallery/robot/robot-2.jpg"}]}

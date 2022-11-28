@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.readText %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/readText.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../ScrollbarPlugin/jquery.mCustomScrollbar.css">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="img-left">
+        <img src="<%= file.image %>" alt="<%= file.title %>">
+      </div>
+      <div class="text-right">
+        <h2><%= file.title %></h2>
+        <p class="credits-reading"><%= language.by %> <span onclick="location.href='/person/<%= file.author.split(' ')[0].toLowerCase() %>'" class="link-person"><%= file.author %></span></p>
+        <hr>
+        <p><%= file.text %></p>
+      </div>
+    </div>
+    <script src="../scripts/locale.js">
+
+    </script>
+
+  </body>
+</html>

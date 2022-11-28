@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.seeThe %> <%= file.name %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/index_responsive.css">
+    <link rel="stylesheet" href="../style/seeOne.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav.ejs %>
+    <div class="all-data constrained">
+      <div class="main-header">
+        <h2 class="main-title"><%= file.name %></h2>
+        <p class="subtitle">
+
+          <% if (file.name.toLowerCase() == "supervisors" || file.name.toLowerCase() == "les superviseurs") {%>
+
+            <%= language.theFollowingSupervisors %>
+
+          <%} else {%>
+
+            <%= language.peopleWhoWorkedOn %> <%= file.name.toLowerCase() %>.</p>
+
+          <%}%>
+      </div>
+      <div class="people-grid">
+        <div class="view-options">
+          <div class="sub-options">
+            <h2><%= language.jumpToPeople %></h2>
+            <ul>
+              <% for (var i = 0; i < file.people.length; i++) { %>
+
+                <li><a href="/person/<%= file.people[i] %>"><%= file.people[i] %></a></li>
+
+              <% } %>
+            </ul>
+          </div>
+        </div>
+        <div class="people-display">
+          <% for (var i = 0; i < file.people.length; i++) { %>
+
+            <div class="card-item">
+              <img alt="<%= file.people[i] %>" src="<%= people[i].images[0] %>">
+              <p><%= file.people[i] %></p>
+              <a class="link-button" href="/person/<%= file.people[i] %>"><%= language.readMore %></a>
+            </div>
+
+          <%} %>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

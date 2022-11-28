@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.view %> <%= file.name %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/person.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../ScrollbarPlugin/jquery.mCustomScrollbar.css">
+    <script src="../jQuery/jquerySource.js"></script>
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav.ejs %>
+    <div class="img-left">
+      <div class="img-buttons">
+        <ul>
+          <% for (var i = 0; i < file.images.length; i++) { %>
+
+            <% if (file.images.length == 1) { %>
+
+              <li><img id="default-selected" class="img-button" src="<%= file.images[i] %>" alt="<%= file.name %>"></li>
+
+            <% } else { %>
+
+              <% if (i == 0) { %>
+
+                <li><img id="default-selected" class="img-button" src="<%= file.images[i] %>" alt="<%= file.name %>" onmouseover="changeImg('<%= file.images[i] %>', 1)"></li>
+
+              <% } else { %>
+
+                <li><img class="img-button" src="<%= file.images[i] %>" alt="<%= file.name %>" onmouseover="changeImg('<%= file.images[i] %>', 2)"></li>
+
+              <% } %>
+
+            <% } %>
+
+          <% } %>
+        </ul>
+      </div>
+      <div class="main-img">
+        <img id="main-img-change" src="<%= file.images[0] %>" alt="<%= file.images[i] %>">
+      </div>
+    </div>
+    <div class="text-right">
+      <p class="contributions">
+
+        <% for (var i = 0; i < file.contributions.length; i++) {%>
+
+          <% if (i == file.contributions.length-1) { %>
+
+            <span class="link-contribution" onclick="location.href = '/job/<%= file.contributions[i].split(' ')[0].toLowerCase() %>'"><%= contributions[i].name %></span>
+
+          <% } else { %>
+
+            <span class="link-contribution" onclick="location.href = '/job/<%= file.contributions[i].split(' ')[0].toLowerCase() %>'"><%= contributions[i].name %></span> |
+
+          <% } %>
+
+        <% } %>
+
+      </p>
+      <h2><%= file.name %></h2>
+      <hr>
+
+      <% if (file.contributions[0] == "Supervisors") {%>
+
+        <p><%= language.teacher %> <%= file.name.split(" ")[file.name.split(" ").length-1] %> <%= language.wasASupervisor %></p>
+
+      <% } else { %>
+
+          <p><%= language.workedOnThe %></p>
+
+          <ul>
+
+          <% for (var i = 0; i < file.contributions.length; i++) {%>
+
+            <li><%= contributions[i].name %></li>
+
+          <% } %>
+
+          </ul>
+
+      <% } %>
+
+    </div>
+
+      <div class="related-people">
+        <div class="related-people-container">
+          <h2 class="people-title-text"><%= language.relatedPeople %></h2>
+          <div class="people-container">
+            <table>
+              <tbody>
+                <tr>
+
+                  <% for (var i = 0; i < contributions.length; i++) {%>
+
+                    <% for (var m = 0; m < contributions[i].people.length; m++) {%>
+
+                      <td onclick="location.href='/person/<%= contributions[i].people[m] %>'">
+                        <div class="table-container">
+
+                          <img src="<%= people[contributions[i].people[m]].images[0] %>" alt="<%= people[contributions[i].people[m]].name %>">
+                          <h2><%= contributions[i].people[m] %></h2><p><%= language.partOf %> <%= contributions[i].name %></p>
+
+                        </div>
+                      </td>
+
+                    <%}%>
+
+                  <%}%>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <script src="../ScrollbarPlugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../scripts/scrollbarSetupPeople.js"></script>
+    <script src="../scripts/imgButtons.js"></script>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

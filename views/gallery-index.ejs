@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.galleryHome %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav-gallery.ejs %>
+    <div class="all-data constrained">
+      <div class="main-header">
+        <h2 class="main-title"><%= language.welcomeMessage %></h2>
+        <p class="subtitle"><%= language.welcomeSubtitle %></p>
+      </div>
+      <div class="styled-hr"></div>
+      <h3><%= language.selectSubteam %></h3>
+      <h4><%= language.selectSubtitle %></h4>
+      <div class="styled-hr"></div>
+      <div class="images-gallery">
+        <div class="image-grid-img">
+          <p><%= language.driveSystem %></p>
+          <img onclick="location.href='/gallery/drive'" src="../images/gallery/drive/drive-4.jpg" alt="<%= language.driveSystem %>">
+        </div>
+        <div class="image-grid-img">
+          <p><%= language.robot %></p>
+          <img onclick="location.href='/gallery/robot'" src="../images/gallery/robot/concept-1.png" alt="<%= language.robot %>">
+        </div>
+        <div class="image-grid-img">
+          <p><%= language.sorter %></p>
+          <img onclick="location.href='/gallery/sorter'" src="../images/gallery/sorter/concept-1.jpg" alt="<%= language.sorter %>">
+        </div>
+        <div class="image-grid-img">
+          <p><%= language.thrower %></p>
+          <img onclick="location.href='/gallery/thrower'" src="../images/gallery/thrower/thrower-2.jpg" alt="<%= language.thrower %>">
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/gallery.js"></script>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.allJobs %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/index_responsive.css">
+    <link rel="stylesheet" href="../style/seeOne.css">
+    <link rel="stylesheet" href="../style/mini-nav.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <%- include ../partials/mini-nav.ejs %>
+    <div class="all-data constrained">
+      <div class="main-header">
+        <h2 class="main-title"><%= language.allJobs %></h2>
+        <p class="subtitle"><%= language.browseAllOfOurSubteams %></p>
+      </div>
+      <div class="people-grid">
+          <div class="card-item">
+            <img src="../images/jobsPreviews/sorter.jpg" alt="<%= language.sorter %>">
+            <p><%= language.sorter %></p>
+            <a class="link-button" href="/job/sorter"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/electrical.jpg" alt="<%= language.electricalSetup %>">
+            <p><%= language.electricalSetup %></p>
+            <a class="link-button" href="/job/electrical"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/programming.jpg" alt="<%= language.program %>">
+            <p><%= language.program %></p>
+            <a class="link-button" href="/job/program"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/driveSystem.jpg" alt="<%= language.driveSystem %>">
+            <p><%= language.driveSystem %></p>
+            <a class="link-button" href="/job/drive"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/pickupOfBalls.jpg" alt="<%= language.pickupOfBalls %>">
+            <p><%= language.pickupOfBalls %></p>
+            <a class="link-button" href="/job/pickup"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/thrower.jpg" alt="<%= language.thrower %>">
+            <p><%= language.thrower %></p>
+            <a class="link-button" href="/job/thrower"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/movie.jpg" alt="<%= language.movie %>">
+            <p><%= language.movie %></p>
+            <a class="link-button" href="/job/movie"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/website.png" alt="<%= language.website %>">
+            <p><%= language.website %></p>
+            <a class="link-button" href="/job/website"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <img src="../images/jobsPreviews/terrainSimulation.jpg" alt="<%= language.gameTerrainSimulation %>">
+            <p><%= language.gameTerrainSimulation %></p>
+            <a class="link-button" href="/job/game"><%= language.readMore %></a>
+          </div>
+          <div class="card-item">
+            <div class="no-image"></div>
+            <p><%= language.supervisors %></p>
+            <a class="link-button" href="/job/supervisors"><%= language.readMore %></a>
+          </div>
+      </div>
+    </div>
+
+    <%# <script src="../scripts/pageManager.js"></script> %>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>

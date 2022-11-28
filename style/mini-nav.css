@@ -1,0 +1,39 @@
+.mini-nav {
+
+  background-color: rgb(250, 250, 250);
+  border-bottom: 1px solid rgba(0,0,0,.17);
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  width: 100%;
+  height: 30px;
+
+}
+
+.mini-nav ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.mini-nav li {
+
+  float: left;
+  padding: 0 11px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 27px;
+  border-bottom: 2px solid transparent;
+  cursor: default;
+
+}
+
+.mini-nav li:hover {
+
+  color: #e47911;
+  border-bottom: 2px solid #f90;
+  cursor: pointer;
+
+}

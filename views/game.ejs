@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= language.gameDescription %></title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/game.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include ../partials/navbar.ejs %>
+    <div class="all-data constrained">
+      <div class="competition-jumbotron">
+        <img class="jumbotron-logo" src="../images/logos/VertiGoalLogo.png" alt="<%= language.gameDescription %>">
+      </div>
+
+      <div class="content">
+        <div class="main-data-text">
+          <div class="content-container">
+            <h2 class="title-text"><%= language.aboutSubtitle %></h2>
+            <div class="container">
+              <p><%= language.aboutCRC %></p>
+            </div>
+            <h2 class="title-text"><%= language.aboutSubtitle2 %></h2>
+            <div class="container">
+              <p><%= language.aboutVertiGoal %></p>
+            </div>
+            <h2 class="title-text"><%= language.locationSubtitle %></h2>
+            <div class="container">
+                <p><%= language.locationDescription %></p>
+            </div>
+          </div>
+          </div>
+          <div class="sidebar-images">
+            <div onclick="location.href='http://www.robo-crc.ca'" class="add" id="add-1"></div>
+            <div onclick="location.href='http://www.lcc.ca'" class="add" id="add-2"></div>
+          </div>
+        </div>
+      </div>
+    <script src="../scripts/locale.js"></script>
+
+  </body>
+</html>
